@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="hr_hosp_diagnosis_list" model="ir.ui.view">
+      <field name="name">hr.hosp.diagnosis Tree ()</field>
+      <field name="model">hr.hosp.diagnosis</field>
+      <field name="arch" type="xml">
+        <tree string="Diagnosis">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="hr_hosp_diagnosis_view_form" model="ir.ui.view">
+        <field name="name">hr.hosp.diagnosis Form ()</field>
+        <field name="model">hr.hosp.diagnosis</field>
+        <field name="arch" type="xml">
+            <form string="Diagnosis form">
+                <sheet>
+                    <group>
+                        <field name="active" invisible="1"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_hosp_diagnosis_act_window" model="ir.actions.act_window">
+        <field name="name">Diagnosis</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.hosp.diagnosis</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="hr_hosp_diagnosis_menu"
+              action="hr_hosp_diagnosis_act_window"
+              parent="hr_hosp_doctors_menu"
+              name="Diagnosis"/>
+
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="hr_hosp_main_menu" name="Hospital"
+              web_icon="hr_hosp,static/description/icon.png"/>
+
+    <menuitem id="hr_hosp_patients_menu" name="Patients"
+              parent="hr_hosp_main_menu"/>
+
+    <menuitem id="hr_hosp_doctors_menu" name="Doctors"
+              parent="hr_hosp_main_menu"/>
+
+    <menuitem id="hr_hosp_catalog_menu" name="Catalog"
+              parent="hr_hosp_main_menu"/>
+
+   <!-- <menuitem id="kw_lib_settings_main_menu" name="Settings"
+              parent="hr_hosp_main_menu"
+              groups="base.group_user,base.group_partner_manager"/>
+    -->
+
+</odoo>
