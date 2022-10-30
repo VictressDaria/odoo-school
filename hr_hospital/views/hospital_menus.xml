@@ -13,9 +13,4 @@
     <menuitem id="hr_hosp_catalog_menu" name="Catalog"
               parent="hr_hosp_main_menu"/>
 
-   <!-- <menuitem id="kw_lib_settings_main_menu" name="Settings"
-              parent="hr_hosp_main_menu"
-              groups="base.group_user,base.group_partner_manager"/>
-    -->
-
 </odoo>
