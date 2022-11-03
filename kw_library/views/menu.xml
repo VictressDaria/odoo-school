@@ -14,5 +14,5 @@
             parent="kw_lib_main_menu"
             groups="base.group_user,base.group_partner_manager"
             sequence="9999"/>
-            <!--groups="group_kw_lib_manager,group_kw_lib_admin" -->
- </odoo>
+
+  </odoo>

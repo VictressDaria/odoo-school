@@ -13,14 +13,16 @@
 
     ],
 
-    'external_dependencies': {'python': [], },
+    'external_dependencies': {'python': ['pyisbn'], },
 
     'data': [
         'security/ir.model.access.csv',
+        'data/ir_sequence.xml'
         'views/menu.xml',
         'views/kw_book.xml',
         'views/kw_author.xml',
-        #'readme.md',
+        'views/kw_category.xml',
+        'views/kw_book_instance.xml',
     ],
 
     'demo': [
